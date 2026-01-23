@@ -30,15 +30,20 @@ Eski bir muhafız olan Arin, yozlaşmış krala itaat etmediği için 10 yıldı
 ## 📸 Oyun Görselleri
 | Ana Menü | Hikaye Başlangıcı |
 | :---: | :---: |
-| <img src="screenshots/anamenu.png" width="400"> | <img src="screenshots/hikaye.png" width="400"> |
+| <img width="350" alt="anamenu" src="https://github.com/user-attachments/assets/ef0a95e8-f4ae-4ec0-aa2d-8379e50429b5" />
+ | <img width="350" alt="hikaye" src="https://github.com/user-attachments/assets/3c6bc571-debe-4a5e-929d-4184aebfaebf" />
+ |
 
 | Karar Anı | Karar Sonucu |
 | :---: | :---: |
-| <img src="screenshots/karar.png" width="400"> | <img src="screenshots/kararsonuc.png" width="400"> |
+| <img width="350" alt="karar" src="https://github.com/user-attachments/assets/1e9fb489-fd54-4870-9e8f-16196a7474b0" />
+ | <img width="350" alt="kararsonuc" src="https://github.com/user-attachments/assets/e272576f-1813-4a1a-9874-4e65e74d5da4" />
+ |
 
 <h3 align="center">Oyun Sonu</h3>
 <div align="center">
-  <img src="screenshots/kacis.png" width="500">
+  <img width="450" alt="kacıs" src="https://github.com/user-attachments/assets/d91c9a43-78db-490f-be0b-56608172a76d" />
+>
 </div>
 
 ---
