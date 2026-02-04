@@ -84,7 +84,7 @@ public class ZindanKacisiOyunu extends JFrame {
 
     // --- YARDIMCILAR ---
     
-    // 1. KAYNAK ETİKETİ (Ghosting Fix)
+    // 1. KAYNAK ETİKETİ 
     private JLabel createResourceLabel() {
         JLabel lbl = new JLabel("", SwingConstants.CENTER) {
             @Override
@@ -103,7 +103,7 @@ public class ZindanKacisiOyunu extends JFrame {
         return lbl;
     }
 
-    // 2. HİKAYE KUTUSU (Scroll + Büyük)
+    // 2. HİKAYE KUTUSU 
     private JPanel createTextPanel(String text) {
         JPanel wrapper = new JPanel(new GridBagLayout());
         wrapper.setOpaque(false);
@@ -132,7 +132,7 @@ public class ZindanKacisiOyunu extends JFrame {
         return wrapper;
     }
 
-    // 3. KARAR KUTUSU (Küçük ve Ortalı)
+    // 3. KARAR KUTUSU 
     private JPanel createDecisionPanel(String text) {
         JPanel wrapper = new JPanel(new GridBagLayout());
         wrapper.setOpaque(false);
@@ -188,7 +188,7 @@ public class ZindanKacisiOyunu extends JFrame {
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
 
-    // --- ÖZEL UYARI PENCERESİ (DÜZELTİLDİ: BAŞLIK EKLENDİ) ---
+    // --- ÖZEL UYARI PENCERESİ ---
     private void ozelUyariGoster(String baslik, String mesaj) {
         JDialog dialog = new JDialog(this, baslik, true); 
         dialog.setSize(550, 400);
@@ -199,10 +199,9 @@ public class ZindanKacisiOyunu extends JFrame {
         dialogPanel.setBackground(new Color(30, 30, 30));
         dialogPanel.setBorder(BorderFactory.createLineBorder(Color.RED.darker(), 4)); 
 
-        // --- YENİ KISIM: BAŞLIĞI MANUEL EKLİYORUZ ---
         JLabel titleLabel = new JLabel(baslik, SwingConstants.CENTER);
         titleLabel.setFont(new Font("Serif", Font.BOLD, 24));
-        titleLabel.setForeground(Color.RED); // Başlık Kırmızı
+        titleLabel.setForeground(Color.RED); 
         titleLabel.setBorder(BorderFactory.createEmptyBorder(20, 10, 10, 10));
         dialogPanel.add(titleLabel, BorderLayout.NORTH);
         // ---------------------------------------------
@@ -214,7 +213,7 @@ public class ZindanKacisiOyunu extends JFrame {
         lblMesaj.setLineWrap(true);
         lblMesaj.setWrapStyleWord(true);
         lblMesaj.setEditable(false);
-        lblMesaj.setMargin(new Insets(10, 30, 30, 30)); // Üst boşluğu biraz azalttım çünkü başlık var
+        lblMesaj.setMargin(new Insets(10, 30, 30, 30)); 
 
         JPanel btnPanel = new JPanel();
         btnPanel.setOpaque(false);
@@ -353,7 +352,6 @@ public class ZindanKacisiOyunu extends JFrame {
             } else guncelleKaynaklar();
         });
 
-        // EKLENEN KISIM: SESSİZ GEÇİŞ AÇIKLAMASI
         btnSag.addActionListener(e -> { 
             can -= 10; 
             guncelleKaynaklar(); 
@@ -467,7 +465,7 @@ public class ZindanKacisiOyunu extends JFrame {
         JPanel btnPanel = new JPanel(); 
         btnPanel.setOpaque(false);
         btnPanel.setBorder(BorderFactory.createEmptyBorder(0,0,50,0));
-        JButton btnTekrar = new JButton("HİKAYEYE BAŞA DÖN"); 
+        JButton btnTekrar = new JButton("BAŞA DÖN"); 
         styleButton(btnTekrar);
         btnTekrar.addActionListener(e -> { resetGame(); cardLayout.show(mainPanel, "AnaMenu"); });
         btnPanel.add(btnTekrar); panel.add(btnPanel, BorderLayout.SOUTH);
